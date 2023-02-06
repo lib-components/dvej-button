@@ -21,7 +21,11 @@ export class DvejButton extends LitElement {
 
   render() {
     return html`
-    <button class="${this.size}, ${this.color}">${this.text}</button>
+    <button @click=${this._onClick} class="${this.size}, ${this.color}">${this.text}</button>
     `;
   }
+
 }
+
+customElements.define('dvej-button', DvejButton);
+
