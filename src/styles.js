@@ -19,5 +19,6 @@ button {
     padding: 10px 15px;
     margin: 10px;
     box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
   }
 `;
