@@ -1,7 +1,7 @@
 import { css } from 'lit';
 
 export const buttonStyle = css`
-  button{
+  button {
     display: block;
     font-family: 'Montserrat', sans-serif;
     font-style: bold;

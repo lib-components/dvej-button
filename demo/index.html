@@ -11,15 +11,16 @@
 <body>
   <div id="demo"></div>
 
-  <script type="module">import { html, render } from 'lit';
+  <script type="module">
+    import { html, render } from 'lit';
     import '../dvej-button.js';
     
     const title = 'Hello owc World!';
     render(
       html`
-        <dvej-button color="bg-green" text='${title}'></dvej-button>
-        <dvej-button size="small" color="bg-green" text='${title}'></dvej-button>
-        <dvej-button size="big" color="bg-green" text='${title}'></dvej-button>
+        <dvej-button color="bg-cyan" text='${title}'></dvej-button>
+        <dvej-button size="small" color="bg-orange" text='${title}'></dvej-button>
+        <dvej-button size="big" color="bg-default" text='${title}'></dvej-button>
       `,
       document.querySelector('#demo')
     );
