@@ -17,16 +17,12 @@
     const title = 'Hello owc World!';
     render(
       html`
-        <dvej-button id="btn" text='${title}'></dvej-button>
+        <dvej-button color="bg-green" text='${title}'></dvej-button>
+        <dvej-button size="small" color="bg-green" text='${title}'></dvej-button>
+        <dvej-button size="big" color="bg-green" text='${title}'></dvej-button>
       `,
       document.querySelector('#demo')
     );
-    const $contextButtons = document.querySelector('#btn');
-    $contextButtons.addEventListener('click', (e) => {
-  
-      console.log("Holaaaaa ss");
-    
-    });
   </script>
 </body>
 </html>

@@ -1,19 +1,11 @@
 import { css } from 'lit';
 
-export const style = css`
-button {
-    display: block;
-    padding: 0;
-    border: none;
-    margin: 0;
-    background: unset;
-    font-family: inherit;
-    font-size: unset;
-  }
-  
+export const buttonStyle = css`
   button{
+    display: block;
     font-family: 'Montserrat', sans-serif;
     font-style: bold;
+    font-size: 1rem;
     border-radius: 5px;
     border: none;
     padding: 10px 15px;
