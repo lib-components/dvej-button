@@ -1,9 +1,8 @@
 import { html, LitElement } from 'lit';
 import { buttonStyle } from './button_styles.js';
-import { bgColors } from './bg_colors.js';
 
 export class DvejButton extends LitElement {
-  static styles = [buttonStyle, bgColors];
+  static styles = [buttonStyle];
 
   static properties = {
     text: { type: String },
@@ -30,15 +29,22 @@ export class DvejButton extends LitElement {
         this.size = '';
         break;
     }
-
     return html`
       <button
-        @click=${this._onClick}
+        @click=${this._dispatchBtnClick}
         class="${this.color}"
         style="${this.size}"
       >
         ${this.text}
       </button>
     `;
+  }
+
+  _dispatchBtnClick() {
+    const options = {
+      bubbles: true,
+      composed: true,
+    };
+    this.dispatchEvent(new CustomEvent('btnClick', options));
   }
 }
